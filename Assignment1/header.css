@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Afacad Flux", sans-serif;
+    background-image: url(./images/background-main.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+body::after{
+    content: "";
+    backdrop-filter: blur(7px);   /* MDN web docs : https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter */
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(0, 0, 0);
+    position: fixed;
+    inset: 0 0 0 40%;
+    transform: translatex(100%); /* MDN web docs : https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+    transition: 300ms transform ease-in; 
+    transform-origin: right;
+    padding: 200px 0px;
+    z-index: 70;
+}
+
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    transition: 300ms ease-in-out;
+}
+
+.links:hover{
+    color: rgb(255, 166, 0);
+    background-color: rgba(255, 255, 255, 0.816);    
+}
+
+.nav-bar {
+    list-style: none;
+}    
+
+.logo1{
+    width: 50%;
+    max-width: 300px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    position: absolute;
+    left: 20px;
+}
+
+.logo1:hover {
+    width: 55%;
+}
+
+.logo2{
+    display: none;
+}
+
+#open {
+    display: none;
+}
+
+.open {
+    position: fixed;
+    top : 20px;
+    right: 20px;
+    width: 10%;
+    max-width: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.open:hover > span{
+    background-color: orange;
+}
+
+.open > span {
+    display: block;
+    height : 5px;
+    width: 100%;
+    background-color: white;
+    margin: 5px;
+    transition: 300ms all ease-in-out;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    opacity: 0; 
+    pointer-events: none;
+    z-index: 50;
+    transition: 300ms opacity ease-in;
+}
+
+.footer { 
+    margin: 0px auto 40px;
+    padding: 20px;
+    border-radius: 50px;
+    background: rgb(0,0,0);
+    background: linear-gradient(19deg, rgba(0,0,0,1) 0%, rgba(10,36,35,0.85) 60%, rgba(10,36,35,1) 100%); /* https://cssgradient.io/ */
+    width: 40%;
+}
+
+.icons{
+    width: 100%;
+    display: inline;
+}
+
+.icons i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 10px;
+    margin: 0px 8%;
+    color: white;
+}
+
+.icons i:hover{
+    border-color: #AB966F;
+    color: #AB966F;
+    cursor: pointer;
+}
+
+#open:checked ~ .overlay{
+    opacity: 50%;
+    pointer-events: all;
+}
+
+
+#open:checked ~ .open > :nth-child(2){
+    transition: 300ms all ease-in;
+    opacity: 0;
+}
+
+#open:checked ~ .open > :nth-child(1){
+    transition: 300ms all ease-in;
+    transform:rotate(45deg) translateY(15px);
+}
+
+#open:checked ~ .open > :nth-child(3){
+    transition: 300ms all ease-in;
+    transform:rotate(-45deg) translateY(-13px);
+}
+
+#open:checked ~ header{
+    transform: translate(0%);
+}
+
+
+@media (min-width : 768px) {
+
+    header{
+        position: static;
+        height: fit-content;
+        transform: translate(0%);
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 50px;
+        display: block;
+    }
+
+    .links {
+        text-decoration: none;
+        color: white;
+        font-weight: 900;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding: 20px;
+        text-align: center;
+        border-radius: 50px;
+        transition: 300ms ease-in-out;
+    }
+    
+    .links:hover{
+        color: rgb(255, 166, 0);
+        background-color: rgba(255, 255, 255, 0.816);    
+    }
+    
+    .nav-bar {
+        margin: 20px auto;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;        
+        position: unset;
+        max-width: unset;
+    }
+    
+    .nav-item, .logo-list-item {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo1 {
+        display: none;
+    }
+
+    .logo2{
+        display: block;
+        margin: 0 auto;
+        min-width: 100px;
+        width: 67%;
+        display: block;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+        position: static;
+        padding: 0;
+    }
+    
+    .logo2:hover {
+        width: 70%;
+    }
+
+    .open {
+        display: none;
+    }
+
+    .footer { 
+        padding: 25px;
+        margin-top: 20px;
+        width: 20%;
+    }
+
+    .icons i {
+        margin: 0px 7.5%;
+    }
+}

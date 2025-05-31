@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="./hero-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3f74acaf9.js" crossorigin="anonymous"></script>
+    <title>Heroes</title>
+</head>
+<body>
+    <input type="checkbox" id="open">   
+    <label for="open" class="open">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="overlay"></div>
+    <a href="index.html"><img class = "logo1" src="./images/eldenring_new.webp" alt=""></a>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="logo-list-item"><a href="index.html"><img class = "logo2" src="./images/eldenring_new.webp" alt=""></a>
+                <li class="nav-item"><a class="links" href="map.html">MAP</a>
+                <li class="nav-item"><a class="links" href="gallery.html">GALLERY</a>
+                <li class="nav-item"><a class="links" href="hero-list.html">HEROES</a>
+                <li class="nav-item"><a class="links" href="bosslist.html">BOSSES</a>
+            </ul>
+        </nav>
+    </header>
+    <article class="article">
+        <h1 class="article-header">STATS</h1>
+        <div class="line"></div>
+        <p class="main-content">
+            Statistics in Elden Ring refer to various properties that govern your character's strengths and weaknesses, as well as how they are affected by interactions in and out of combat. There are 8 main Stats in Elden Ring, as well as several dozen secondary stats which all contribute to your character's growth and effectiveness in various situations. Stats are affected by a number of things and can be modified by your Level, Equipment, and any active buffs and effects.
+        </p>
+        <table class="table">
+            <tr class="table-row">
+                <th>Attribute</th>
+                <th>Description</th>
+            </tr>
+            <tr class="table-row">
+                <td>Vigor</td>
+                <td>Attribute governing HP. Also affects fire resistance and Immunity stat</td>
+            </tr>
+            <tr class="table-row">
+                <td>Mind</td>
+                <td>Attribute governing FP. Also affects the Focus stat.</td>
+            </tr>
+            <tr class="table-row">
+                <td>Endurance</td>
+                <td>Attribute governing Stamina. Also affects Robustness. Determines how heavy your equipment can be, a.k.a. Equip Load.</td>
+            </tr>
+            <tr class="table-row">
+                <td>Strength</td>
+                <td>Attribute required to wield heavy armaments.
+                    Influences player physical/strike/slash/pierce defense and provides Attack Power scaling for weapons that utilize the stat.</td>
+            </tr>
+            <tr class="table-row">
+                <td>Dexterity</td>
+                <td>Attribute required to wield advanced armaments. Also boosts attack power of dexterity-scaling armaments, reduces casting time of Spells, softens fall damage, and makes it harder to be knocked off your horse.</td>
+            </tr>
+            <tr class="table-row">
+                <td>Intelligence</td>
+                <td>Attribute required to perform glintstone sorceries. Also boosts the power of intelligence-scaling Sorceries and improves Magic Resistance.</td>
+            </tr>
+            <tr class="table-row">
+                <td>Faith</td>
+                <td>Attribute required to perform sacred Incantations. Also boosts the power of faith-scaling Incantations.</td>
+            </tr>
+            <tr class="table-row">
+                <td>Arcane</td>
+                <td>Influences player holy defense and death resistance, provides AP scaling for weapons that utilize the stat, increases item discovery (linearly), and provides scaling for poison, bleed, sleep, and madness buildup.</td>
+            </tr>
+        </table>
+    </article>
+    <!-- text and images from Wiki - https://eldenring.wiki.fextralife.com/Classes -->
+    <article class="article">
+        <h1 class="article-header">HEROES</h1>
+        <div class="line"></div>
+        <p class="main-content">
+            Classes for Elden Ring are the combat archetypes available at Character Creation. Choosing a class determines the player's base Stats and the Equipment they start with.   
+        </p>
+        <!-- flip-box - https://www.w3schools.com/howto/howto_css_flip_image.asp -->
+        <div class="heroes">
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/hero_class_elden_ring_wiki_guide_200px.png" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 14</td>
+                                <td>Dexterity - 9</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 9</td>
+                                <td>Intelligence - 7</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 12</td>
+                                <td>Faith - 8</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 16</td>
+                                <td>Arcane - 11</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/bandit_class_elden_ring_wiki_guide_200px.webp" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 10</td>
+                                <td>Dexterity - 13</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 11</td>
+                                <td>Intelligence - 9</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 10</td>
+                                <td>Faith - 8</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 9</td>
+                                <td>Arcane - 14</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/astrologer_class_elden_ring_wiki_guide_200px.png" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 9</td>
+                                <td>Dexterity - 12</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 15</td>
+                                <td>Intelligence - 16</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 9</td>
+                                <td>Faith - 7</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 8</td>
+                                <td>Arcane - 9</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/warrior_class_elden_ring_wiki_guide_200px.webp" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 11</td>
+                                <td>Dexterity - 16</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 12</td>
+                                <td>Intelligence - 10</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 11</td>
+                                <td>Faith - 8</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 10</td>
+                                <td>Arcane - 9</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/prisoner_class_elden_ring_wiki_guide_200px.png" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 11</td>
+                                <td>Dexterity - 14</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 12</td>
+                                <td>Intelligence - 14</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 11</td>
+                                <td>Faith - 6</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 11</td>
+                                <td>Arcane - 9</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/confessor_class_elden_ring_wiki_guide_200px.webp" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 10</td>
+                                <td>Dexterity - 12</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 13</td>
+                                <td>Intelligence - 9</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 10</td>
+                                <td>Faith - 14</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 12</td>
+                                <td>Arcane - 9</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/vagabond_class_elden_ring_wiki_guide_200px.webp" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 15</td>
+                                <td>Dexterity - 13</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 10</td>
+                                <td>Intelligence - 9</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 11</td>
+                                <td>Faith - 9</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 14</td>
+                                <td>Arcane - 7</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/prophet_class_elden_ring_wiki_guide_200px.webp" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 10</td>
+                                <td>Dexterity - 10</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 14</td>
+                                <td>Intelligence - 7</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 8</td>
+                                <td>Faith - 16</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 11</td>
+                                <td>Arcane - 10</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-box">
+                <div class="inner">
+                    <div class="front">
+                        <img src="./images/heroes/samurai_class_elden_ring_wiki_guide_200px.webp" alt="">
+                    </div>
+                    <div class="back">
+                        <table>
+                            <tr>
+                                <td>Vigor - 12</td>
+                                <td>Dexterity - 15</td>
+                            </tr>
+                            <tr>
+                                <td>Mind - 11</td>
+                                <td>Intelligence - 9</td>
+                            </tr>
+                            <tr>
+                                <td>Endurance - 13</td>
+                                <td>Faith - 8</td>
+                            </tr>
+                            <tr>
+                                <td>Strength - 12</td>
+                                <td>Arcane - 8</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- Source - https://fontawesome.com/ -->
+    <footer class="footer">
+        <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+    </footer>
+</body>
+</html>

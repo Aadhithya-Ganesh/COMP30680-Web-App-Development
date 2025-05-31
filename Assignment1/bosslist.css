@@ -1,0 +1,93 @@
+.article {
+    padding: 100px 0px 50px;
+    margin: 0 auto;
+}
+
+.article-header {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #AB966F;
+    margin-left: 5%;
+    padding: 20px 0px 0px;
+}
+
+.line {
+    border-bottom: 2px solid #AB966F;
+    width: 90%;
+    margin: 0 auto 30px;
+}
+
+.main-content {
+    color : white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto 50px;
+    background-color: #0a242394;
+    font-size: 1.4rem;
+}
+
+.table {
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.table tr:nth-child(odd){
+    background-color: #0e302f93;
+}
+
+.table tr:nth-child(even){
+    background-color:  #3d5e5d89;
+}
+
+.table tr:first-child{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+th { 
+    font-size: 1.5em;
+    padding: 20px;
+    color: #AB966F;
+    font-weight: 900;
+}
+
+td {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 300ms ease-in-out;
+}
+
+a:hover{
+    color: orange;
+}
+
+@media (min-width : 768px) {
+    
+    .article {
+        padding-top: 50px;
+    }
+
+    .main-content{
+        margin: 0px auto 50px;
+        max-width: 1000px;
+    }
+
+    .line{
+        width: 80%;
+    }
+
+    .article-header {
+        margin-left: 10%;
+    }
+
+    .table {
+        max-width: 1000px;
+    }
+}
