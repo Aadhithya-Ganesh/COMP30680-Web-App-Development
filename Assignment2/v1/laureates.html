@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laureates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="sections">
+            <section class="physics"></section>
+            <section class="chemistry"></section>
+            <section class="literature"></section>
+            <section class="economics"></section>
+            <section class="medicine"></section>
+            <section class="peace"></section>
+        </div>
+        <table class="table display">
+            <th colspan="5" class="table-header"></th>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Details</th>
+            </tr>
+        </table>
+    </div>
+    <div class="overlay display">
+        <input type="checkbox" id = "close">
+        <label for="close" class="close">
+            <span></span>
+            <span></span>
+        </label>
+        <h1 class="overlay-header"></h1>
+        <p class="overlay-para"></p>
+    </div>
+</body>
+</html>

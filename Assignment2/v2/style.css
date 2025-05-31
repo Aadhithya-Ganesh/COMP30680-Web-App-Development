@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(3, 3, 31);
+  height: 100%;
+  color: white;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+.blur {
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.sections {
+  margin: 40px;
+  position: fixed;
+}
+
+section {
+  margin: 20px;
+}
+
+section p {
+  cursor: pointer;
+}
+
+.section-header {
+  font-size: 25px;
+  margin: 20px 0px;
+  transition: 200ms ease-in-out;
+}
+
+.section-header:hover {
+  font-size: 30px;
+  color: orange;
+}
+
+.list {
+  margin-left: 40px;
+}
+
+.list li {
+  font-weight: 500;
+}
+
+.list-item {
+  padding: 10px 5px;
+}
+
+.show-laureate {
+  margin-left: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+}
+
+.show-laureate:hover {
+  color: orange;
+  border-color: orange;
+}
+
+.display {
+  display: none;
+}
+
+table {
+  position: absolute;
+  top: 20px;
+  left: 30%;
+  padding: 20px;
+  text-align: center;
+  width: 65%;
+}
+
+th {
+  padding: 20px;
+  border: 2px solid white;
+  font-size: 25px;
+  color: rgb(255, 166, 0);
+}
+
+td {
+  padding: 20px;
+  border: 2px solid white;
+}
+
+td:last-child {
+  padding: 0;
+  margin: 0;
+}
+
+.show-more {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  height: 60px;
+  text-decoration: underline;
+}
+
+.show-more:hover {
+  color: orange;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+}
+
+.popup {
+  background-color: white;
+  position: fixed;
+  inset: 20%;
+  z-index: 100;
+}
+
+#close {
+  display: none;
+}
+
+.close {
+  display: block;
+  width: fit-content;
+  height: 40px;
+  position: relative;
+  top: 20px;
+  left: 94%;
+  cursor: pointer;
+}
+
+.close span {
+  display: block;
+  width: 40px;
+  margin: 5px;
+  height: 5px;
+  background-color: black;
+}
+
+.close span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.close span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.overlay-header {
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.overlay-para {
+  margin: 12% 13%;
+  color: black;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.age {
+  display: none;
+}
